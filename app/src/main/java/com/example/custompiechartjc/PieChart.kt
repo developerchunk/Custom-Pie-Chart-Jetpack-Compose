@@ -108,7 +108,7 @@ fun PieChart(
         }
 
         // To see the data in more structured way
-        // Compose Function in which Items showing data
+        // Compose Function in which Items are showing data
         DetailsPieChart(
             data = data,
             colors = colors
