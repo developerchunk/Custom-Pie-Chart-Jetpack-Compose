@@ -34,6 +34,10 @@ fun PieChart(
     val totalSum = data.values.sum()
     val floatValue = mutableListOf<Float>()
 
+    // To set the value of each Arc according to
+    // the value given in the data, we have used a simple formula.
+    // For a detailed explanation check out the Medium Article.
+    // The link is in the about section and readme file of this GitHub Repository
     data.values.forEachIndexed { index, values ->
         floatValue.add(index, 360 * values.toFloat() / totalSum.toFloat())
     }
