@@ -129,7 +129,7 @@ fun DetailsPieChart(
 ) {
     Column(
         modifier = Modifier
-            .padding(top = 60.dp)
+            .padding(top = 80.dp)
             .fillMaxWidth()
     ) {
         // create the data items
@@ -152,7 +152,7 @@ fun DetailsPieChartItem(
 
     Surface(
         modifier = Modifier
-            .padding(vertical = 10.dp, horizontal = 30.dp),
+            .padding(vertical = 10.dp, horizontal = 40.dp),
         color = Color.Transparent
     ) {
 
