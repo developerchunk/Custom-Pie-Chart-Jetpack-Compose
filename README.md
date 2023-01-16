@@ -7,4 +7,6 @@ Please check out my youtube channel (Developer Chunk) for more interesting conte
 
 YouTube Video: https://youtu.be/H9cJ9jBzQ3c
 
+Medium Article: https://medium.com/@developerchunk/create-custom-pie-chart-with-animations-in-jetpack-compose-android-studio-kotlin-49cf95ef321e
+
 ![Custom Pie Chart](https://user-images.githubusercontent.com/90105266/212503579-cc2db357-3512-4381-8a43-2a8ff8d6fe1f.png)
