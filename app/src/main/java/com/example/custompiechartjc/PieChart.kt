@@ -5,7 +5,6 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Surface
@@ -19,6 +18,7 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.custompiechartjc.ui.theme.*
@@ -26,8 +26,8 @@ import com.example.custompiechartjc.ui.theme.*
 @Composable
 fun PieChart(
     data: Map<String, Int>,
-    radiusOuter: Dp = 90.dp,
-    chartBarWidth: Dp = 20.dp,
+    radiusOuter: Dp = 140.dp,
+    chartBarWidth: Dp = 35.dp,
     animDuration: Int = 1000,
 ) {
 
@@ -94,6 +94,7 @@ fun PieChart(
         ) {
             Canvas(
                 modifier = Modifier
+                    .offset { IntOffset.Zero }
                     .size(radiusOuter * 2f)
                     .rotate(animateRotation)
             ) {
